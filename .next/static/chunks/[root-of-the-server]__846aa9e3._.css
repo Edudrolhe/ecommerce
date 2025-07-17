@@ -507,6 +507,10 @@ img, video {
   gap: 2.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .truncate {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -515,6 +519,15 @@ img, video {
 
 .rounded-md {
   border-radius: .375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity, 1));
 }
 
 .bg-slate-700 {
@@ -543,6 +556,11 @@ img, video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-3 {
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .px-3\.5 {
