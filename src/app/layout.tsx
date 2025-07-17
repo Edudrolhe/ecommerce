@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 import NavBar from "./components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "E-Commerce Edu",
-  description: "E-Commerce para verder meus objetos",
+  description: "E-Commerce para vender meus objetos",
 };
 
 export default function RootLayout({
@@ -25,10 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={clsx(inter.className, 'bg-slate-700')}>
         <NavBar />
-        <main className="bg-slate-700 h-screen p-16">
+        <main className=" h-screen p-16">
           {children}
         </main>
       </body>
