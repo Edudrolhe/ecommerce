@@ -42,17 +42,17 @@ async function Home() {
                     children: product.title
                 }, product.id, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 23,
+                    lineNumber: 25,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 21,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
