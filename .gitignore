@@ -1,3 +1,8 @@
-node_modules
+# Dependências
+node_modules/
 
-/src/generated/prisma
+# Arquivos de ambiente
+.env.local
+
+# Pastas geradas automaticamente
+/src/generated/prisma/.env.local
