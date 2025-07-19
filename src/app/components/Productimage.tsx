@@ -14,9 +14,9 @@ export default function ProductImage({ product, fill }: ProductImageProps) {
     
     return fill ? (
         <Image 
-            src={product.image}
+            src={product.image || '/placeholder-image.jpg'} // Added fallback for null image
             fill
-            alt={product.title}
+            alt={product.name || 'Product image'} // Changed from title to name
             className={`object-cover ${
                 loading ? 'scale-110 blur-3xl grayscale' : 'scale-110 blur-0 grayscale-0'
             }`}
@@ -24,10 +24,10 @@ export default function ProductImage({ product, fill }: ProductImageProps) {
         />
     ) : (
         <Image 
-            src={product.image}
+            src={product.image || '/placeholder-image.jpg'} // Added fallback for null image
             width={400}
             height={700}
-            alt={product.title}
+            alt={product.name || 'Product image'} // Changed from title to name
             className={`object-cover ${
                 loading ? 'scale-110 blur-3xl grayscale' : 'scale-110 blur-0 grayscale-0'
             }`}

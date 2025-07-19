@@ -379,6 +379,10 @@ img, video {
   height: 100vh;
 }
 
+.h-3 {
+  height: .75rem;
+}
+
 .max-h-72 {
   max-height: 18rem;
 }
@@ -389,6 +393,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.w-8\/12 {
+  width: 66.6667%;
 }
 
 .max-w-7xl {
@@ -439,6 +447,10 @@ img, video {
   border-radius: .375rem;
 }
 
+.rounded-lg {
+  border-radius: .5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -461,6 +473,11 @@ img, video {
 .bg-teal-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(20, 184, 166, var(--tw-bg-opacity, 1));
+}
+
+.bg-zinc-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(63, 63, 70, var(--tw-bg-opacity, 1));
 }
 
 .object-cover {

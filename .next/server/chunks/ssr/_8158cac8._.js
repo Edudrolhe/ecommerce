@@ -16,9 +16,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 function ProductImage({ product, fill }) {
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     return fill ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-        src: product.image,
+        src: product.image || '/placeholder-image.jpg',
         fill: true,
-        alt: product.title,
+        alt: product.name || 'Product image',
         className: `object-cover ${loading ? 'scale-110 blur-3xl grayscale' : 'scale-110 blur-0 grayscale-0'}`,
         onLoadingComplete: ()=>setLoading(false)
     }, void 0, false, {
@@ -26,10 +26,10 @@ function ProductImage({ product, fill }) {
         lineNumber: 16,
         columnNumber: 9
     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-        src: product.image,
+        src: product.image || '/placeholder-image.jpg',
         width: 400,
         height: 700,
-        alt: product.title,
+        alt: product.name || 'Product image',
         className: `object-cover ${loading ? 'scale-110 blur-3xl grayscale' : 'scale-110 blur-0 grayscale-0'}`,
         onLoadingComplete: ()=>setLoading(false)
     }, void 0, false, {
@@ -2775,7 +2775,7 @@ const _routercontextsharedruntime = __turbopack_context__.r("[project]/node_modu
 const _imageloader = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/image-loader.js [app-ssr] (ecmascript)"));
 const _usemergedref = __turbopack_context__.r("[project]/node_modules/next/dist/client/use-merged-ref.js [app-ssr] (ecmascript)");
 // This is replaced by webpack define plugin
-const configEnv = ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["fakestoreapi.com"],"remotePatterns":[]}'));
+const configEnv = ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["files.stripe.com"],"remotePatterns":[]}'));
 if ("TURBOPACK compile-time truthy", 1) {
     ;
     globalThis.__NEXT_IMAGE_IMPORTED = true;
@@ -3093,7 +3093,7 @@ function getImageProps(imgProps) {
     const { props } = (0, _getimgprops.getImgProps)(imgProps, {
         defaultLoader: _imageloader.default,
         // This is replaced by webpack define plugin
-        imgConf: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["fakestoreapi.com"],"remotePatterns":[]}'))
+        imgConf: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["files.stripe.com"],"remotePatterns":[]}'))
     });
     // Normally we don't care about undefined props because we pass to JSX,
     // but this exported function could be used by the end user for anything

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///Users/eduardodrolhe/Documents/projects/ecommerce/src/app/loading.tsx"],"sourcesContent":["import { ClerkProvider } from \"@clerk/nextjs\";\n\nexport default function Product() {\n    return  <ClerkProvider>\n          <div className=\"max-w-7xl mx-auto pt-8 px-8 xl:px-0\">\n            <div className=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 xl:gap-6\">\n             Skeleton\n            </div>\n          </div>\n        </ClerkProvider>\n}"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACpB,qBAAQ,8OAAC,yKAAA,CAAA,gBAAa;kBAChB,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC;gBAAI,WAAU;0BAAgF;;;;;;;;;;;;;;;;AAK3G","debugId":null}}]
+}
