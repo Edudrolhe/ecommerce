@@ -7,3 +7,4 @@ node_modules/
 # Pastas geradas automaticamente
 /src/generated/prisma/.env.local
 .env.local
+.env.local
