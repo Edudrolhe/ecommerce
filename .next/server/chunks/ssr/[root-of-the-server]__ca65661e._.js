@@ -44,6 +44,33 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$e
 ;
 const useCartStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["create"])()((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["persist"])((set)=>({
         cart: [],
+        addProduct: (item)=>set((state)=>{
+                const product = state.cart.find((p)=>p.id === item.id);
+                if (product) {
+                    const updatedCart = state.cart.map((p)=>{
+                        if (p.id === item.id) {
+                            return {
+                                ...p,
+                                quantity: p.quantity ? p.quantity + 1 : 1
+                            };
+                        }
+                        return p;
+                    });
+                    return {
+                        cart: updatedCart
+                    };
+                } else {
+                    return {
+                        cart: [
+                            ...state.cart,
+                            {
+                                ...item,
+                                quantity: 1
+                            }
+                        ]
+                    };
+                }
+            }),
         isOpen: false,
         toggleCart: ()=>set((state)=>({
                     isOpen: !state.isOpen
