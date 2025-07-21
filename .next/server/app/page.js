@@ -9,7 +9,7 @@ runtime.loadChunk("server/chunks/ssr/node_modules_@clerk_nextjs_dist_esm_2b3b868
 runtime.loadChunk("server/chunks/ssr/node_modules_@clerk_backend_dist_a205f0fd._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@clerk_localizations_dist_index_mjs_4da605b8._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_2c46f383._.js");
-runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__798780ef._.js");
+runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__6eba4f4d._.js");
 runtime.loadChunk("server/chunks/ssr/src_app_a046d984._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_1c8c21fa._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_651c1c6d.js");

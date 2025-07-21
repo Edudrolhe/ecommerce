@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["file:///Users/eduardodrolhe/Documents/projects/ecommerce/src/app/product/%5Bid%5D/page.tsx"],"sourcesContent":["type ProductPageProps = {\n    params: {\n        id: string;\n    };\n};\n\nexport default function ProductPage({ params: { id }}: ProductPageProps) {\n    console.log(id);\n    return <div>Product</div>\n}"],"names":[],"mappings":";;;;;AAMe,SAAS,YAAY,EAAE,QAAQ,EAAE,EAAE,EAAE,EAAmB;IACnE,QAAQ,GAAG,CAAC;IACZ,qBAAO,8OAAC;kBAAI;;;;;;AAChB","debugId":null}}]
+}
